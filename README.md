@@ -30,6 +30,7 @@ Whilst this project is still undergoing continued improvement, the following fea
 - Various convenience wrappers to allow easier and less-cluttered creation of rich *UITextView* content using *NSAttributedString*s.
 - Dyanamic embedding of native video playback for supported media items from the NASA feed.
 - Search functionality to pull in user-selected topics from the feed.
+- Scrolling topics bar for quick access to popular archival material
 
 
 # License details
