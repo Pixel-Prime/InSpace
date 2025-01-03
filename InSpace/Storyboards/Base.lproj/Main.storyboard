@@ -279,7 +279,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Jupiter"/>
                                                         <connections>
-                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchDown" id="QKd-y6-UqH"/>
+                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRD-3P-e8C"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nh5-HF-QtL">
@@ -288,7 +288,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Saturn"/>
                                                         <connections>
-                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchDown" id="zVr-hb-iuP"/>
+                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUv-0m-WOB"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEM-E5-sG1">
@@ -297,7 +297,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Earth"/>
                                                         <connections>
-                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchDown" id="Lq3-BB-hoP"/>
+                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zaw-Mq-RKf"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXr-U6-MBb">
@@ -306,7 +306,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Satellite"/>
                                                         <connections>
-                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchDown" id="RyD-hI-gfI"/>
+                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jji-cv-3s7"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xo2-R9-5Lg">
@@ -315,7 +315,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Asteroid"/>
                                                         <connections>
-                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchDown" id="iua-l1-6UX"/>
+                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dOJ-rS-q1C"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ1-bc-I7q">
@@ -324,7 +324,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Nebula"/>
                                                         <connections>
-                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchDown" id="ZZL-JI-h8P"/>
+                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHU-b9-Ve6"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jF-3i-g2y">
@@ -333,7 +333,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Sun"/>
                                                         <connections>
-                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchDown" id="TdF-yw-c3A"/>
+                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MEm-kw-z5Q"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygK-Ps-iYO">
@@ -342,7 +342,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Hubble"/>
                                                         <connections>
-                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchDown" id="Hv1-M1-7Sr"/>
+                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nZn-h3-Qfi"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaM-Ke-9pJ">
@@ -351,7 +351,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Photo"/>
                                                         <connections>
-                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchDown" id="TuT-CB-d67"/>
+                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enI-bA-mHX"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSD-P5-gL7">
@@ -360,7 +360,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Video"/>
                                                         <connections>
-                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchDown" id="Zkg-ei-rvI"/>
+                                                            <action selector="tapTopicLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5hE-R2-ehs"/>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Twh-6v-RKL">
