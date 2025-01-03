@@ -1,3 +1,4 @@
+
 # Welcome to InSpace
 
 **InSpace** is a personal *iOS* project created to demonstrate the integration of various platform features and capabilities in *Swift*. This project is made possible thanks to the [NASA Open APIs](https://api.nasa.gov/) project, which provides access to an incredibly rich source of decades-long exploration, research, and mission data.
@@ -16,7 +17,6 @@ This work is licensed under a
 [cc-by-nc-nd-shield]: https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg
 
 
-
 # Current capabilities
 
 Whilst this project is still undergoing continued improvement, the following features can already be found in the latest build:
@@ -31,6 +31,12 @@ Whilst this project is still undergoing continued improvement, the following fea
 - Dyanamic embedding of native video playback for supported media items from the NASA feed.
 - Search functionality to pull in user-selected topics from the feed.
 - Scrolling topics bar for quick access to popular archival material
+
+
+
+# Screenshots
+
+![The app's home screen](InSpace/Resources/app01.png)   ![Media detail view](InSpace/Resources/app02.png)
 
 
 # License details
