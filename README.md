@@ -4,6 +4,19 @@
 
 This app utilises one of these APIs, the venerable **NASA Image and Video Library**, to display a wealth of photos and videos relating to an enormous array of scientific and astronomical topics.
 
+Shield: [![CC BY-NC-ND 4.0][cc-by-nc-nd-shield]][cc-by-nc-nd]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License][cc-by-nc-nd].
+
+[![CC BY-NC-ND 4.0][cc-by-nc-nd-image]][cc-by-nc-nd]
+
+[cc-by-nc-nd]: http://creativecommons.org/licenses/by-nc-nd/4.0/
+[cc-by-nc-nd-image]: https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png
+[cc-by-nc-nd-shield]: https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg
+
+
+
 # Current capabilities
 
 Whilst this project is still undergoing continued improvement, the following features can already be found in the latest build:
