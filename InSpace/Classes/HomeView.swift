@@ -19,6 +19,7 @@ class HomeView: UIViewController {
     @IBOutlet weak var lblTopic: UILabel!
     @IBOutlet weak var aiv: UIActivityIndicatorView!
     @IBOutlet weak var vLoadingTopic: UIView!
+    @IBOutlet weak var vTopicScroller: UIView!
     
     /// Stores a list of feed results
     var lastResults: NASAFeedContainer?
@@ -172,6 +173,8 @@ class HomeView: UIViewController {
         
         self.searchBar.isEnabled = false
         self.btnRandomTopic.isEnabled = false
+        self.vTopicScroller.isUserInteractionEnabled = false
+        self.vTopicScroller.alpha = 0.7
     }
     
     /// Enables the UI
@@ -187,6 +190,8 @@ class HomeView: UIViewController {
             self.vLoadingTopic.layer.removeAllAnimations()
             self.vLoadingTopic.transform = .identity
             self.vLoadingTopic.isHidden = true
+            self.vTopicScroller.isUserInteractionEnabled = true
+            self.vTopicScroller.alpha = 1
         }
     }
     
@@ -203,6 +208,18 @@ class HomeView: UIViewController {
         return str
     }
     
+    /// Starts running a new search with the given parameters
+    private func startNewSearch(_ text: String) {
+        // start this search
+        disableUI()
+        btnRandomTopic.isHidden = true
+        aiv.isHidden = false
+        tview.isUserInteractionEnabled = false
+        tview.alpha = 0.7
+        showLoadingPopup()
+        Task { await fetchFeed(keywords: text) }
+    }
+    
     /// Picks a random feed topic
     @IBAction func tapRandomTopic() {
         
@@ -211,13 +228,17 @@ class HomeView: UIViewController {
         if (kw.elementsEqual(lastSearch)) { return }
         
         // start this search
-        disableUI()
-        btnRandomTopic.isHidden = true
-        aiv.isHidden = false
-        tview.isUserInteractionEnabled = false
-        tview.alpha = 0.7
-        showLoadingPopup()
-        Task { await fetchFeed(keywords: kw) }
+        startNewSearch(kw)
+    }
+    
+    /// User taps an item in the topic links bar
+    @IBAction func tapTopicLink(_ sender: Any) {
+        // get a reference to the button's label
+        guard let btn = sender as? UIButton else { return }
+        guard let topic = btn.titleLabel?.text, !topic.isEmpty else { return }
+        
+        // start this search
+        startNewSearch(topic)
     }
     
     /// User taps the info button
@@ -254,7 +275,7 @@ class HomeView: UIViewController {
         
         super.viewDidLayoutSubviews()
         
-        // set up a gradient to use for our mask
+        // set up a gradient to use for our table viewmask
         let grad = CAGradientLayer()
         grad.frame = vTableContainer.bounds
         grad.colors = [UIColor.black.cgColor, UIColor.black.cgColor, UIColor.clear.cgColor]
@@ -262,6 +283,16 @@ class HomeView: UIViewController {
         
         // add the mask
         vTableContainer.layer.mask = grad
+        
+        // set up a gradient to use for our topics bar mask
+        let gradTopics = CAGradientLayer()
+        gradTopics.frame = vTopicScroller.bounds
+        gradTopics.colors = [UIColor.black.cgColor, UIColor.clear.cgColor]
+        gradTopics.startPoint = CGPoint(x: 0.9, y: 0)
+        gradTopics.endPoint = CGPoint(x: 1, y: 0)
+        
+        // add the mask
+        vTopicScroller.layer.mask = gradTopics
     }
     
     /// Respond to trait changes (to pick up changes between light/dark modes)
