@@ -59,6 +59,7 @@
 		A138774A2D26A7B5008C902E /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 		A138774D2D26B70F008C902E /* MediaCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCache.swift; sourceTree = "<group>"; };
 		A138774F2D26C4F3008C902E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A148FA452D2AD3C800EF2D06 /* InSpace.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = InSpace.xctestplan; sourceTree = "<group>"; };
 		A186915E2D270B4000698435 /* FileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
 		A18691642D28096900698435 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		A18691662D280FBD00698435 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 		A13877052D1EB937008C902E = {
 			isa = PBXGroup;
 			children = (
+				A148FA452D2AD3C800EF2D06 /* InSpace.xctestplan */,
 				A13877102D1EB937008C902E /* InSpace */,
 				A13877272D1EB938008C902E /* InSpaceTests */,
 				A138770F2D1EB937008C902E /* Products */,

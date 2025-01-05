@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "81EFDE97-6E88-415B-9B85-9000538616E6",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:InSpace.xcodeproj",
+      "identifier" : "A138770D2D1EB937008C902E",
+      "name" : "InSpace"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:InSpace.xcodeproj",
+        "identifier" : "A13877232D1EB938008C902E",
+        "name" : "InSpaceTests"
+      }
+    }
+  ],
+  "version" : 1
+}
