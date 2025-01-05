@@ -10,6 +10,29 @@ import Foundation
 /// Defines the container object that holds the search results feed
 class NASAFeedContainer: Codable {
     var collection: NASAFeedCollection?
+    
+    /// Provides a valid, empty version of the feed (for testing)
+    private static func emptyFeed() -> NASAFeedContainer {
+        // build an empty feed object
+        let container = NASAFeedContainer()
+        container.collection?.items = [NASAFeedItem]()
+        container.collection?.metadata = NASAFeedMetadata()
+        container.collection?.links = [NASAFeedNavLink]()
+        return container
+    }
+    
+    /// Provides an empty feed as JSON data
+    static func emptyFeedAsJSON() -> Data? {
+        let obj = emptyFeed()
+        do {
+            let data = try JSONEncoder().encode(obj)
+            return data
+        }
+        catch {
+            /// return an empty JSON string for now
+            return nil
+        }
+    }
 }
 
 /// Defines the container object that holds the search results

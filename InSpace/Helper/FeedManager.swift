@@ -14,7 +14,7 @@ class FeedManager {
     private static let kFeedBaseURL = "https://images-api.nasa.gov/"
     
     /// Locator to allow searching for assets
-    private static var kFeedSearchURI: String { return "\(FeedManager.kFeedBaseURL)/search?q=" }
+    static var kFeedSearchURI: String { return "\(FeedManager.kFeedBaseURL)/search?q=" }
     
     /// Locator for a given media asset
     private static var kFeedAssetURI: String { return "\(FeedManager.kFeedBaseURL)/asset/{id}" }
@@ -72,7 +72,7 @@ class FeedManager {
     }
     
     /// Requests a fresh copy of the feed data
-    static func requestSearch(_ searchKeywords: String) async throws -> NASAFeedContainer? {
+    static func requestSearch(_ searchKeywords: String, session: URLSessionProtocol = URLSession.shared) async throws -> NASAFeedContainer? {
         
         // capture common errors
         guard !searchKeywords.isEmpty else {
@@ -86,7 +86,7 @@ class FeedManager {
         
         // run the request
         do {
-            let (data, response) = try await URLSession.shared.data(from: url)
+            let (data, response) = try await session.data(from: url)
             
             // check the response
             guard let response = response as? HTTPURLResponse else {

@@ -29,6 +29,7 @@
 		A18BFCA42D26DFDB00033494 /* RandomTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18BFCA32D26DFDB00033494 /* RandomTopic.swift */; };
 		A18BFCA62D26EBDD00033494 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18BFCA52D26EBDD00033494 /* Defaults.swift */; };
 		A18BFCAC2D26F46600033494 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18BFCAB2D26F46600033494 /* AboutView.swift */; };
+		A1E65AB92D2AC76500DDEC16 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E65AB82D2AC76500DDEC16 /* TestModel.swift */; };
 		A1E6A2122D284406007EFA10 /* app01.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E6A2102D284406007EFA10 /* app01.png */; };
 		A1E6A2132D284406007EFA10 /* app02.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E6A2112D284406007EFA10 /* app02.png */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		A18BFCA32D26DFDB00033494 /* RandomTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomTopic.swift; sourceTree = "<group>"; };
 		A18BFCA52D26EBDD00033494 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		A18BFCAB2D26F46600033494 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		A1E65AB82D2AC76500DDEC16 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		A1E6A2102D284406007EFA10 /* app01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app01.png; sourceTree = "<group>"; };
 		A1E6A2112D284406007EFA10 /* app02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app02.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +201,7 @@
 				A13877452D1EBA18008C902E /* FeedManager.swift */,
 				A186915E2D270B4000698435 /* FileHandler.swift */,
 				A138774D2D26B70F008C902E /* MediaCache.swift */,
+				A1E65AB82D2AC76500DDEC16 /* TestModel.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				A186915F2D270B4000698435 /* FileHandler.swift in Sources */,
 				A18BFCA62D26EBDD00033494 /* Defaults.swift in Sources */,
 				A18691692D2816EA00698435 /* HelpOverlay.swift in Sources */,
+				A1E65AB92D2AC76500DDEC16 /* TestModel.swift in Sources */,
 				A13877142D1EB937008C902E /* SceneDelegate.swift in Sources */,
 				A13877462D1EBA18008C902E /* FeedManager.swift in Sources */,
 				A18691652D28096900698435 /* WelcomeView.swift in Sources */,
@@ -555,6 +559,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InSpace/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = InSpace;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -591,6 +596,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InSpace/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = InSpace;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -622,7 +628,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2233R38VFW;
+				DEVELOPMENT_TEAM = XZV6P7N4NF;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -642,7 +648,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2233R38VFW;
+				DEVELOPMENT_TEAM = XZV6P7N4NF;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -661,7 +667,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2233R38VFW;
+				DEVELOPMENT_TEAM = XZV6P7N4NF;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andyjc.InSpaceUITests;
@@ -679,7 +685,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2233R38VFW;
+				DEVELOPMENT_TEAM = XZV6P7N4NF;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andyjc.InSpaceUITests;
